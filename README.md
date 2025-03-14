@@ -39,6 +39,3 @@ javac TollBooth/Main.java
 ### 3. Run Programm
 ```bash
 java TollBooth/Main
-
-
-
