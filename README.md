@@ -31,9 +31,11 @@ To install and set up the project, follow these steps:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/Rehancodecraft/TollBooth.git
+```
 ### 2. Compile the Java Program
 ```bash
 javac TollBooth/Main.java
+```
 ### 3. Run Programm
 ```bash
 java TollBooth/Main
