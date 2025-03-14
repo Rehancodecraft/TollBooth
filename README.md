@@ -23,3 +23,12 @@ If you want to check the existing records, select __Check Details__
 If you want to enter new details of cars passing through the TollBooth, select __Start__
   
 ![TollBooth CheckDetails](ScreenShots/Addingpayment.png)
+
+## How to Install and Run the software
+
+To install and set up the project, follow these steps:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/repository-name.git
+
