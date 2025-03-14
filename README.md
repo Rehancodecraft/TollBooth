@@ -7,4 +7,4 @@ Upon launchig the software, the user is presented with three options:
 * __Start__ Choose this option to add payment and vehicle records.
 * __Exit__ Select this option to close the application.
 The user must choose one of these options to proceed
-![TollBooth System] (ScreenShots/StratSoftware.png)
+![TollBooth System](ScreenShots/StratSoftware.png)
