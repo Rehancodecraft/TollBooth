@@ -23,3 +23,4 @@ If you want to check the existing records, select __Check Details__
 If you want to enter new details of cars passing through the TollBooth, select __Start__
   
 ![TollBooth Start](ScreenShots/Addingpayement.png)
+![TollBooth CheckDetails](ScreenShots/CheckDetails.png)
