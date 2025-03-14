@@ -39,3 +39,5 @@ javac TollBooth/Main.java
 ### 3. Run Programm
 ```bash
 java TollBooth/Main
+```
+<h2 align="center">Thank You for Visiting</h2>
