@@ -5,6 +5,7 @@ This is a simple Java-based terminal application designed for toll booth data ma
 Upon launchig the software, the user is presented with three options:
 * __Check Detais__ Select this option to view existing records.
 * __Start__ Choose this option to add payment and vehicle records.
-* __Exit__ Select this option to close the application.
+* __Exit__ Select this option to close the application.  
 The user must choose one of these options to proceed
+  
 ![TollBooth System](ScreenShots/StratSoftware.png)
