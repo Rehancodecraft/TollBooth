@@ -1,5 +1,5 @@
 # TollBooth
-This is a simple Java-based terminal application designed for toll booth data management. The program tracks vehicles passing through the toll booth, categorizing them based on whether they pay the toll fee of $0.50 or bypass payment. It maintains a count of both paying and non-paying vehicles and calculates the total revenue collected in dollars. Additionally, it provides a summary report displaying the total number of vehicles that passed without paying. This project serves as a basic implementation of data tracking and financial computation in a toll booth system.
+This is a simple Java-based terminal application designed for toll booth data management. The program tracks vehicles passing through the toll booth, categorizing them based on whether they pay the toll fee of $0.50 or bypass payment. It maintains a count of both paying and non-paying vehicles and calculates the total revenue collected in dollars. Additionally, it provides a summary report displaying the total number of vehicles that passed without paying. This project is a basic implementation of data tracking and financial computation in a toll booth system.
 
 ## Software Start
 Upon launching the software, the user is presented with three options:
@@ -20,6 +20,6 @@ If you want to check the existing records, select __Check Details__
 
 
 ## Entering new details 
-If you want to enter new details of cars passing through the TollBooth, select __Strat__
+If you want to enter new details of cars passing through the TollBooth, select __Start__
   
-![TollBooth CheckDetails](ScreenShots/Addingpayement.png)
+![TollBooth Start](ScreenShots/Addingpayement.png)
