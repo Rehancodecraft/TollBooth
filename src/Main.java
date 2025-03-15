@@ -1,5 +1,5 @@
 //Author: Rehan Shafiq
-package TollBooth;
+package src;
 import java.util.*;
 public class Main{
 	public static void main(String[] args){
@@ -18,7 +18,6 @@ public class Main{
 
 						TollBooth.display();
 						TollBooth.exit();
-						// action = tollbooth1.ask_action();
 						break;
 
 					case 2:
@@ -31,9 +30,6 @@ public class Main{
 						
 
 					}
-
-					
-
 					//IT AGAIN ASK FOR ACTION AFTER EXITING THE PAYMENT MODE
 					action = TollBooth.ask_action();
 			
