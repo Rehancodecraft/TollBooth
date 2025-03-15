@@ -1,13 +1,13 @@
 //Author: Rehan Shafiq
 package TollBooth;
 import java.util.*;
-public class TollBooth{
+public final class TollBooth{
 
 	//DATA MEMBERS OF CLASS
-	private  int noPaycars;
-	private  double total_ammount;
-	private double total_dollars = 0;
-	Scanner input = new Scanner(System.in);
+	private static int noPaycars;
+	private  static double total_ammount;
+	private static double total_dollars = 0;
+	
 	
 	//DEFAULT CONSTRUCTOR TO INITALIZE THE VALUES
 	TollBooth(){
@@ -17,27 +17,28 @@ public class TollBooth{
 
 	
 	//METHOD TO ASK ACTION FROM YOUR OF HIS CHOICE
-	public int ask_action() {
+	public static int ask_action() {
+		Scanner input = new Scanner(System.in);
 		System.out.print("1.Check Details\n2.Start\n3.Exit\nChose Option: ");
 		int action = input.nextInt();
 		return action;
 	}
 
 	//METHOD TO ADD AMMOUNT TO TOTAL AMMOUNT IN CENTS
-	public void payingCar(){
+	public static void payingCar(){
 		total_ammount += 50;
 
 	}
 	
 	//METHOD TO CALCULATE NUMBER OF NON PAYING CARS
-	public void noPaycar(){
+	public static void noPaycar(){
 		noPaycars++;
 
 	}
 	
 	//METHOD TO DISPLAY THE DETAILS IN TABLE FORM
 	
-	public void display() {
+	public static void display() {
         // Table header
         System.out.println("+----------------------------+");
         System.out.println("|      Record of Toll Booth  |");
@@ -52,17 +53,53 @@ public class TollBooth{
     	}	
 
 	//METHOD TO CONVERT CENTS TO DOLLARS
-	public double calculate_dollars(){
+	public static double calculate_dollars(){
 			return total_dollars = total_ammount/100;
 	}
 	
 	//METHOD TO EXIT FROM THE SOFTWARE
-	public void exit(){
+	public static void exit(){
+		Scanner input = new Scanner(System.in);
 		System.out.print("Do you want to exit?(y/n): ");
 		char exit = input.next().charAt(0);
 		if(exit == 'y'){
 			System.exit(0);
 		}
 	}
+
+	//METHOD TO TAKE ENTRIES
+	public static void submit_entry(){
+						Scanner input = new Scanner(System.in);
+						int count = 0;
+						while(true){
+						count++;
+						System.out.print(count+". Car has payed?(y/n): ");
+						char status = input.next().charAt(0);
+					
+
+						//IF USER ENTER Y IT WILL ADD 0.50 CENTS IN TOTAL AMMOUNT
+						if((status== 'y' || status == 'Y')){
+						TollBooth.payingCar();
+							}	
+					
+						//IF USER ENTER N IT WILL NOT ADD THE PAYMENT AND WILL COUNT THE NUMBER OF CARS
+						else if((status == 'n' || status == 'N')){
+						TollBooth.noPaycar();
+							}
+						//IF USER ENTER X IT WILL TERMINATER FROM PAYMENT MODE
+						else if(status == 'x' || status == 'X'){
+						System.out.println("\nExiting.......");
+
+						TollBooth.display();
+							break;
+							}
+						else{
+							System.out.println("Enter 'y' for paying cars, 'n' for Non paying cars and 'x' to exit"); 
+						}
+
+						}
 }
+}
+
+
 
