@@ -45,7 +45,7 @@ javac src/Main.java
 java src/Main
 ```
 ### OR
-Just run this command in Linux
+Just run this command in Linux after cloning the ropository
 ```bash
 cd TollBooth
 java -jar TollBooth.jar
